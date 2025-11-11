@@ -68,7 +68,6 @@ function buildAnswerSequence(lyrics, len){
   return out;
 }
 
-
 function setupButtons(lyrics){
   buttonsBox.innerHTML="";
   charBtnMap.clear();
@@ -141,7 +140,6 @@ async function startRound(idx=cur.roundIdx){
   cancelAnimationFrame(loopRaf);
   loopRaf=requestAnimationFrame(loop);
 }
-
 
 let loopRaf=null;
 function loop(){
