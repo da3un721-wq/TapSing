@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>손으로 부르는 노래방 (데모)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<div id="countdown"></div>
+
+<body>
+
+<audio id="song" src="../audio/song.mp3" preload="auto" playsinline></audio>
+
+  <div id="game">
+    <h1 id="roundLabel">ROUND</h1>
+
+    <div id="lane">
+      <div id="hitline"></div>
+    </div>
+
+    <div id="buttons"></div>
+    <div id="hud">
+      정확도: <span id="acc">0%</span>
+      <span id="judge"></span>
+    </div>
+
+    <button id="start">START</button>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
+
+
