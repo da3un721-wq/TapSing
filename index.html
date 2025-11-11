@@ -4,15 +4,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>손으로 부르는 노래방 (데모)</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <link rel="stylesheet" href="./style.css">
 </head>
-
-<div id="countdown"></div>
-
 <body>
 
-<audio id="song" src="audio/song.mp3" preload="auto" playsinline></audio>
+  <audio id="song" src="./audio/song.mp3" preload="auto" playsinline></audio>
 
+  <div id="countdown"></div>
 
   <div id="game">
     <h1 id="roundLabel">ROUND</h1>
@@ -22,6 +21,7 @@
     </div>
 
     <div id="buttons"></div>
+
     <div id="hud">
       정확도: <span id="acc">0%</span>
       <span id="judge"></span>
@@ -30,8 +30,9 @@
     <button id="start">START</button>
   </div>
 
-  <script src="game.js"></script>
+<script src="./project/game.js" defer></script>
+
+
+
 </body>
 </html>
-
-
