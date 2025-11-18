@@ -2,37 +2,62 @@
 <html lang="ko">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>손으로 부르는 노래방 (데모)</title>
 
-  <link rel="stylesheet" href="./style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>Tap Sing</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <audio id="song" src="./audio/song.mp3" preload="auto" playsinline></audio>
+  <div id="game-root">
 
-  <div id="countdown"></div>
+    <header id="top-bar">
+      <div id="top-dot"></div>
+    </header>
 
-  <div id="game">
-    <h1 id="roundLabel">ROUND</h1>
+    <main id="game-screen">
 
-    <div id="lane">
-      <div id="hitline"></div>
+      <div id="lane">
+
+        <div id="hitline"></div>
+      </div>
+
+      <div id="pad-row">
+        <button class="pad" data-col="0"></button>
+        <button class="pad" data-col="1"></button>
+        <button class="pad" data-col="2"></button>
+        <button class="pad" data-col="3"></button>
+      </div>
+
+      <div id="bottom-bar">
+        <button id="start-btn">START</button>
+      </div>
+    </main>
+
+    <div id="result-overlay" class="hidden">
+      <div id="result-card">
+        <div id="result-round"></div>
+        <div id="result-question">당신의 점수는?</div>
+
+        <div id="result-box">
+          <div id="result-score"></div>
+          <div id="result-comment"></div>
+        </div>
+
+        <div id="result-passfail"></div>
+        <div id="result-hint">화면을 탭해서 계속 진행</div>
+      </div>
     </div>
 
-    <div id="buttons"></div>
-
-    <div id="hud">
-      정확도: <span id="acc">0%</span>
-      <span id="judge"></span>
+    <div id="countdown-overlay" class="hidden">
+      <div id="countdown-number">3</div>
     </div>
-
-    <button id="start">START</button>
   </div>
 
-<script src="./project/game.js" defer></script>
+  <audio id="song" src="audio/song.mp3" preload="auto"></audio>
 
 
-
+  <script src="project/game.js"></script>
 </body>
 </html>
+
