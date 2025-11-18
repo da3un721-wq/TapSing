@@ -127,6 +127,8 @@ const resultCommentEl = document.getElementById('result-comment');
 const resultPassFailEl = document.getElementById('result-passfail');
 const resultHintEl   = document.getElementById('result-hint');
 
+const howto = document.getElementById('howto');
+
 const countdownOverlay = document.getElementById('countdown-overlay');
 const countdownNumber  = document.getElementById('countdown-number');
 
@@ -478,10 +480,14 @@ pads.forEach((pad, idx) => {
 startBtn.addEventListener('click', () => {
   primeAudio(); 
 
-  
   if (state.running) return;
+
+  if (howto) {
+    howto.classList.add('hidden');
+  }
 
   startBtn.classList.add('disabled');
   startBtn.textContent = "PLAYING...";
   runCountdown(() => startRound(0));
 });
+

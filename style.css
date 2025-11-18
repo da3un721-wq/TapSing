@@ -299,3 +299,23 @@ body {
   transform:translate(-50%, -50%)
   font-size:14px
 }
+
+#howto {
+  text-align: center;
+  font-size: 11px;
+  line-height: 1.5;
+  color: #a0a0b4;
+  padding: 2px 4px 0;
+}
+
+#howto-title {
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #7cf6c8;
+  margin-bottom: 3px;
+}
+
+#howto-body {
+  font-size: 11px;
+}
