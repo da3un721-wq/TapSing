@@ -292,3 +292,10 @@ body {
   box-shadow: 0 0 20px #00ff9699, 0 0 35px #00ff96aa;
 }
 
+#soundcomment{
+  position:absolute
+  bottom:90%
+  left:50%
+  transform:translate(-50%, -50%)
+  font-size:14px
+}
